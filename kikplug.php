@@ -59,3 +59,9 @@ Copyright 2005-2023 Automattic, Inc.
 // if ( defined( 'WP_CLI' ) && WP_CLI ) {
 // 	require_once AKISMET__PLUGIN_DIR . 'class.akismet-cli.php';
 // }
+
+function enqueue_js() {
+  wp_enqueue_script( 'myjs', './kikjs.js');
+}
+
+add_action('admin_enqueue_scripts', 'enqueue_js');
