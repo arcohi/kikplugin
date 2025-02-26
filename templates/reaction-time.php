@@ -1,1 +1,0 @@
-<section class="reaction-time rt"></section>
